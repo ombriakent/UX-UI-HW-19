@@ -7,6 +7,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
 <!--Abril Fatface Font-->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&display=swap" rel="stylesheet">
@@ -22,8 +25,37 @@
         <ul>
         <a href="#"> WORK</a>
         <a href="#"> BEHIND THE SCREEN</a>
-        <a href="#"> CONTACT</a>
-        <a href="#"> RESUME</a>
+        <a href="#" id="contact"> CONTACT</a>
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:bbefa726-8801-40f8-871f-90f08370d6e6"> RESUME</a>
+        <div class="hideMe" id="contact-popup" style="display:none; width: 100%; height: 100%; position: relative; border-radius: 5px; backdrop-filter: blur(4px); z-index: 10; right:0px;">
+            <div style="width: 414px; height: 205px; left: 0px; top: 0px; position: absolute; background: #FFFCF3"></div>
+            <div style="width: 414px; height: 414px; left: 1px; top: 205px; position: absolute; background: #C3DDD0"></div>
+            <div style="width: 229px; height: 37px; left: 24px; top: 22px; position: absolute; color: black; font-size: 30px; font-family: Comfortaa; font-weight: 400; text-decoration: underline; word-wrap: break-word">Let’s Connect!</div>
+            <div style="width: 366px; height: 366px; left: 25px; top: 232px; position: absolute">
+                <div style="width: 366px; height: 59px; left: 0px; top: 53px; position: absolute; background: white; border-radius: 10px; border: 1px black solid"></div>
+                <div style="width: 295px; height: 31px; left: 18px; top: 71px; position: absolute; color: #9D9A9A; font-size: 20px; font-family: Comfortaa; font-weight: 400; word-wrap: break-word">Name</div>
+
+
+                <div style="width: 312px; height: 37px; left: 0px; top: 0px; position: absolute; color: black; font-size: 30px; font-family: Comfortaa; font-weight: 400; word-wrap: break-word">Leave a message:</div>
+
+
+                <div style="width: 366px; height: 156px; left: 0px; top: 140px; position: absolute; background: white; border-radius: 10px; border: 1px black solid"></div>
+                <div style="width: 295px; height: 36px; left: 18px; top: 159px; position: absolute; color: #9D9A9A; font-size: 20px; font-family: Comfortaa; font-weight: 400; word-wrap: break-word">Enter Message Here</div>
+
+
+                <div style="width: 121px; height: 44px; padding-left: 24px; padding-right: 24px; padding-top: 10px; padding-bottom: 10px; left: 200px; top: 322px; position: absolute; background: #3B6064; border-radius: 10px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+                    <div style="width: 73px; height: 24px; color: white; font-size: 24px; font-family: Comfortaa; font-weight: 700; word-wrap: break-word">SEND</div>
+                </div>
+            </div>
+            <div style="width: 260px; height: 107px; left: 77px; top: 67px; position: absolute">
+                <a href="mailto:ombriakent@yahoo.com"><img style="width: 90px; height: 90px; left: 0px; top: 0px; position: absolute" src="images/Email.png" >
+                <div style="width: 90px; height: 23px; left: 0px; top: 84px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Comfortaa; font-weight: 500; word-wrap: break-word">Email</div></a>
+
+                <a href="http://www.linkedin.com/in/ombria-kent"><div style="width: 90px; height: 23px; left: 170px; top: 84px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Comfortaa; font-weight: 500; word-wrap: break-word">LinkedIn</div>
+                <img style="width: 90px; height: 90px; left: 170px; top: 0px; position: absolute" src="images/LinkedIn.png"></a>
+            </div>
+        </div>
+       
         </ul>
     </nav>
 
@@ -99,30 +131,30 @@
    
     <div class="case-study-item-1"> 
 
-        <div><img src="images/image-placeholder.png" width="600px"></div>
+        <div><img src="images/popstay.png"></div>
             
     
-        <div><h2>Case Study 1</h2>
-        <p> This is the body content for my first case case-study</p>
+        <div><h2>PopStay</h2>
+        <p>Mobile app designed to help travelers find safe and affordable accomodations.</p>
         <button>View Full Study</button>
         </div>
         
     </div>
 
     <div class="case-study-item-2">
-            <div><img src="images/image-placeholder.png" width="600px"></div>
+            <div><img src="images/adult-tings.png"></div>
 
-            <div><h2>Case Study 2</h2>
-            <p> This is the body content for my second case case-study</p>
+            <div><h2>Adult-tings</h2>
+            <p>Mobile app design for new app targeting young adults looking to learn new skills.</p>
 
             <button>View Full Study</button></div>
             
     </div>
 
     <div class="case-study-item-3">
-            <div><img src="images/image-placeholder.png" width="600px"></div>
-            <div><h2><b>Case Study 3</b></h2>
-            <p> This is the body content for my third case case-study</p>
+            <div><img src="images/sisters-camelot.png"></div>
+            <div><h2><b>Sisters' Camelot</b></h2>
+            <p> Responsive web redesign for a non-profit organization. </p>
             <button>View Full Study</button>
             </div>
      </div>
@@ -131,5 +163,9 @@
     <button>VIEW ALL PROJECTS</button>
     </section>
 
+    
 </body>
+
+
+<script src="js/index.js"></script>
 </html>

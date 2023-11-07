@@ -8,7 +8,7 @@ body{
 nav{
     float: right;
     background-color: #3B6064;
-    margin: 5px;
+    margin: 0px 20px;
 }
 nav a{
     text-decoration: none;
@@ -66,12 +66,10 @@ nav a{
     font-family:'Comfortaa', sans-serif;
     font-size: 30px;
     font-weight: 900;
-    border: 1px solid red;
   }
   h2 {
     font-family: 'Comfortaa', sans-serif;
     font-size: 24px;
-    border: 1px solid blue;
 
   }
 
@@ -80,15 +78,16 @@ nav a{
     font-family: 'Comfortaa', sans-serif;
     font-size: 20px;
     color: black;
-    border: 1px solid green;
 
 
   }
   
 
  
-  img[src="images/image-placeholder.png"]{
+  .myWork img {
     width: 400px;
+    border: solid 3px #CFCDC4;
+    border-radius: 10px;
   }
 
   img[src="images/peach-arrow.png"]{
@@ -139,7 +138,7 @@ nav a{
   margin: 30px 50px;
 }
   h1{
-  padding:30px;
+  padding: 0px 30px;
 
 }
 
@@ -149,13 +148,11 @@ nav a{
     flex-wrap: wrap;
     margin: 20px;
     padding: 1px;
-    border: 1px red solid;
-}
+  justify-content: center;}
 
 #flex-item-1, #flex-item-2, #flex-item-3{
-    width: 33%;
+    width: 25%;
     padding: 30px;
-    border: 1px solid black;
 
 }
 .flexContainer img{
@@ -168,15 +165,15 @@ nav a{
   padding: 5px;
   margin: 5px;
   display: grid;
-  grid-template-rows:600px 600px 600px;
+  grid-template-rows:500px 500px 500px;
   grid-template-areas: "cs1" "cs2" "cs3";
   
 }
   .case-study-item-1, .case-study-item-2, .case-study-item-3{
     padding: 40px;
-    margin: 50px 20px;
+    margin: 20px;
     background-color: #FFFCF3;
-    border-width: 10px; 
+    border-width: 5px; 
     border-color:#CFCDC4;
     border-style: solid;
     border-radius: 10px;
@@ -201,7 +198,7 @@ nav a{
   grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 600px){
+@media (max-width: 800px){
   .flexContainer{
     display:flex;
     flex-direction: column;
@@ -218,10 +215,11 @@ nav a{
 
   }
   .case-study{
+    justify-content: center;
     padding: 5px;
     margin: 5px;
     display: grid;
-    grid-template-rows:800px 800px 800px;
+    grid-template-rows:600px 600px 600px;
     grid-template-columns: 400px;
     grid-template-areas: "cs1" "cs2" "cs3";
   }
@@ -251,9 +249,10 @@ nav a{
     align-items: center;
 
 }
-  img[src="images/image-placeholder.png"]{
+.myWork img{
     width: 300px;
   }
+
   img[src="images/peach-arrow.png"]{
     position: absolute;
     top: 0;
@@ -298,6 +297,9 @@ nav a{
     font-size: 20px;
     right: 120px;
   }
+  #contact-popup div{
+    width: 50%;
+    }
 }
 
 
@@ -313,4 +315,5 @@ button{
   padding: 10px;
   background-color: #3B6064;
   color:#FFFCF3;
+  
 }
